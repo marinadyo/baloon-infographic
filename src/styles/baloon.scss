@@ -1,0 +1,70 @@
+.baloon {
+  position: relative;
+  background-color: #353541;
+  border-radius: 8px;
+  padding: 17px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right: 18px;
+}
+
+.baloon__title {
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+
+.baloon__company {
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.baloon__dates {
+  color: indianred;
+  margin-bottom: 10px;
+}
+
+.baloon__text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.baloon__circle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 9px 10px 10px -54px;
+  z-index: 0;
+}
+
+.baloon__circle::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: #fb6470;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: 5px 10px 9px 5px;
+  z-index: 1;
+}
+
+.baloon__tail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #353541;
+  z-index: 1;
+  margin: -9px 10px 10px -29px;
+  border-left: 12px solid #fff;
+  border-bottom: 12px solid transparent;
+  border-top: -5px solid transparent;
+}
