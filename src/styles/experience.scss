@@ -1,0 +1,50 @@
+//.experience
+//      .experience__item //полоска будет частью(псевдоэлемент экспириенса), кружки - элемент балуна, не задавать ширину балуну,
+//        .baloon
+//          .baloon__title
+//          a.baloon__comapny(href='')
+//          .baloon__dates
+//          p.baloon__text //круг-внешний див, внутренний - всевдоэлемент
+//          //хвостик тоже сделать псевдоэлементом
+
+
+.experience {
+
+}
+
+.experience__item {
+  max-width: 320px;
+  height: auto;
+}
+
+.baloon {
+  background-color: #353541;
+  border-radius: 8px;
+  padding: 17px;
+  color: white;
+}
+
+.baloon__title {
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+
+.baloon__company {
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.baloon__dates {
+  color: indianred;
+  margin-bottom: 10px;
+}
+
+.baloon__text {
+  font-size: 14px;
+  line-height: 22px;
+}
