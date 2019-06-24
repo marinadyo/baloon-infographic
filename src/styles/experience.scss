@@ -10,19 +10,42 @@
 
 .experience {
   position: relative;
+
+
+  @media(min-width: 1024px) {
+    width: 740px;
+  }
 }
 
 .experience__line {
+
+  @media(min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.experience__line-draw {
   position: absolute;
   height: 550px;
   width: 1px;
   background-color: black;
   margin: 13px;
   z-index: 0;
+
 }
 
 .experience__item {
   max-width: 320px;
   height: auto;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    //grid-template-columns: 800px;
+    grid-template-columns: 2fr 2fr;
+
+
+  }
 }
 
